@@ -2,25 +2,26 @@
 <html>
 <head>
 <meta charset="utf-8">
+<title>Flourish and Blotts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<title>Flourish and Blotts</title>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
 	      <a class="navbar-brand" href="#">Flourish and Blotts</a>
-	    </div>
+    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
 	    <ul class="nav navbar-nav">
 	      <li><a href="#">About Us</a></li>
 	      <li><a href="#">Our Collection</a></li>
@@ -28,15 +29,16 @@
 	      <li><a href="#">Book a Book Signing</a></li>
 	    </ul>
 	    <ul class="nav navbar-nav navbar-right">
-	    <li><a href="#">Already Verified! Login Here..</a></li>
+	    <li><a href="#">Already Verified! Login Here</a></li>
 	    </ul>
-	  </div>
-	</nav>
+	    </div>
+  </div>
+</nav>
 	<div class="container">
-		<div class="row"><h1> Flourish and Blotts</h1></div>
+		<div class="text-center"><h1>Flourish and Blotts</h1></div></div>
 		<br>
 			<div class="row">
-				<div class= "col-md-4 col-md-offset-1">At Flourish and Blotts we don't just sell books, we sell an experience. In the name of Merlin's beard there
+				<div class= "col-md-4 col-md-offset-1">At <em>Flourish and Blotts</em> we don't just sell books, we sell an experience. In the name of Merlin's beard there
 				is no book that you cannot find here. Witches and wizards, this is your one stop
 				destination for every book there. Even 'The Invisible Book of Invisibility'. Visit us at 
 				<a href="#">North side. Diagon Alley</a> today!!
@@ -56,13 +58,19 @@
 								<td><img class="thumb img-reponsive img-thumbnail img-rounded" src="https://vignette4.wikia.nocookie.net/harrypotter/images/9/9a/Hpbookdh.jpg/revision/latest/scale-to-width-down/338?cb=20100602175807"></td>
 								<td>The Life and Lies of Albus Dumbledore</td>
 								<td>Rita Skeeter</td>
-								<td>10 Galleons</td>
+								<td><span class="badge">10 </span> Galleons</td>
 							</tr>
 							<tr>
 								<td><img class="thumb img-reponsive img-thumbnail img-rounded" src="http://vignette3.wikia.nocookie.net/pottermore/images/2/23/Holidays-with-hags-lrg.png/revision/latest?cb=20120714225122"></td>
 								<td>Holidays with Hags</td>
 								<td>Glideroy Lockhart</td>
 								<td><span class="badge">5 </span>Galleons</td>
+							</tr>
+							<tr>
+								<td>N.A.</td>
+								<td>The Monster Book of Monsters</td>
+								<td>Edwardus Lima</td>
+								<td><span class="badge">4 </span>Galleons</td>
 							</tr>
 						</tbody>
 					</table>
@@ -72,7 +80,7 @@
 				<form name="registerForm" method="post">
 					<h3>Verify You are 'Magical'</h3>
 					<div>Username
-						<input type="text" id="name" autofocus placeholder="Type Your Name" class="form-control">
+						<input type="text" id="name" autofocus required placeholder="Type Your Name" class="form-control">
 					</div>
 					
 					<div>Password
@@ -82,7 +90,13 @@
 					<div>Confirem Your Password
 						<input type="text" id="password" required placeholder="Type Your Password Again" class="form-control">
 					</div>
-					<button type="submit" class="btn btn-lg">Login</button>
+					<div>
+					<input type= "checkbox" required>
+					I am not a Muggle
+					
+					</div>
+					<br>
+					<button type="submit" class="btn btn-warning" >Login</button>
 				</div>
 			</div>
 		
