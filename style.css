@@ -1,9 +1,13 @@
 body{
-	background-image:url("http://www.psdgraphics.com/file/light-wooden-background.jpg");
+	background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQM7f-NkvTncLS79Yz6EhXOQFE10phVVmOlWb1o8qWvzgQp4gw3A");
 	font-family: 'Roboto', sans-serif;
+	text-transform: inherit;
 }
 h1 {
     color: #ff463b;
     text-align: center;
     //background-color: black;
+}
+button:hover {
+    opacity: 0.5;
 }
